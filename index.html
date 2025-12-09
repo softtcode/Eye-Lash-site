@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Ana Carolina | Extensão de Cílios</title>
 </head>
 <body>
-    <div class="landing-grid">
+    <div class="landing-grid" id="home">
         <div class="landing-left-side">
             <header> <!--Cabeçalho-->
                 <h1>Logo</h1>
                 <nav>
                     <a class="nav-link" href="#home">HOME</a>
                     <a class="nav-link" href="#services">SERVIÇOS</a>
-                    <a class="nav-link" href="#contact">CONTATO</a>
+                    <a class="nav-link" href="#contato">CONTATO</a>
                 </nav>
             </header> <!--Fim do cabeçalho-->
             <div class="landing-main-section">
                 <div class="landing-main-section-content">
-                    <h1>Cílios e Sobrancelhas: Definição, Beleza e Conforto</h1>
+                    <h1>Cílios: Definição, Beleza e Conforto</h1>
                     <h2>Especializada em extensões de cílios e na sua beleza. Realce sua beleza com luxo & cuidado</h2>
                     <div class="wpp-link-container">
-                        <a id="wpp-link" href="#">Reservar Horário</a>
+                        <a class="btn-link" href="https://wa.me/5521969804954?text=Oi!%20Quero%20reservar%20um%20horário!" target="_blank">Reservar Horário<span class="material-symbols-outlined">arrow_outward</span></a>
                         <img src="assets/images/Marrom_Elegante_Beleza_Logo_Diretrizes_Apresentacao-removebg-preview.png" alt="">
                     </div>
                 </div>
@@ -31,7 +34,69 @@
         <div class="landing-right-side"></div>
     </div>
     <main>
-        <!--A fazer-->
+        <section class="presentation-section"> <!--Começo da seção de apresentação-->
+            <img src="assets/images/carol-profile.png" alt="Foto de apresentação" id="presentation-photo">
+            <div class="presentation-section-text">
+                <h2 class="margin" id="presentation-title">Sua expert em Cílios &amp; Estilo</h2>
+                <h3 class="margin" id="presentation-subtitle">Tratamento luxuoso em um ambiente amigável</h3>
+                <p>Olá, tudo bem? Meu nome é Ana Carolina Barbosa. Comprometida com técnica, higiene e excelência. Busco sempre entregar o melhor resultado, respeitando a saúde dos seus cílios e o estilo que mais valoriza sua beleza. Minha missão vai além da simples aplicação: é sobre criar uma experiência completa de cuidado e relaxamento, onde a precisão técnica se une à arte da personalização.</p>
+            </div>
+        </section> <!--Fim da seção de apresentação-->
+        <section id="services"> <!--Começo da seção de Preços e Serviços-->
+            <div class="services-section-text">
+                <h2>Meus Serviços</h2>
+                <h3>Tratamentos de beleza únicos para cada cliente</h3>
+                <a class="btn-link" href="https://wa.me/5521969804954?text=Oi!%20Quero%20reservar%20um%20horário!" target="_blank" id="btn-services-link">Reservar Horário<span class="material-symbols-outlined">arrow_outward</span></a>
+            </div>
+            <div class="tabela-services-grid">
+                <div class="preco-card">
+                    <img src="assets/images/landing-image.jpeg" alt="" class="service-ilustration">
+                    <div class="service-info">
+                        <h4 class="service-title">Classic Lash</h4>
+                        <p class="preco">R$90</p>
+                        <p class="preco-descricao">Aplicação de extensões onde cada fio natural recebe apenas um fio sintético, criando um resultado natural e delicado. Proporciona um acabamento elegante, discreto e com aspecto de “cílios naturais perfeitos”. </p>
+                    </div>
+                </div>
+
+                <div class="preco-card">
+                    <img src="assets/images/img-ilustration1.jpeg" alt="" class="service-ilustration">
+                    <div class="service-info">
+                        <h4 class="service-title">Volume Brasileiro</h4>
+                        <p class="preco">R$120</p>
+                        <p class="preco-descricao">Extensão de Cílios com Preenchimento maior. Ideal para quem deseja cílios mais volumosos sem perder a naturalidade.</p>
+                    </div>
+                </div>
+
+                <div class="preco-card">
+                    <img src="assets/images/img-ilustration2.jpeg" alt="" class="service-ilustration">
+                    <div class="service-info">
+                        <h4 class="service-title">Volume Luxo</h4>
+                        <p class="preco">R$140</p>
+                        <p class="preco-descricao">O resultado é um volume marcante, preenchido e sofisticado,sem pesar nos cílios naturais. Ideal para clientes que desejam um olhar mais impactante, porém com acabamento mais elegante.</p>
+                    </div>
+                </div>
+            </div>
+        </section> <!--Fim da seção de Preços e Serviços-->
     </main>
+    <footer>
+        <div class="footer-flex">
+            <div id="contact">
+                <div id="location" class="contact-icon"><span class="material-symbols-outlined">location_on</span><p>RJ - Cabo Frio</p></div>
+                <div id="tel-contact" class="contact-icon"><span class="material-symbols-outlined">call</span><p>+55 21 96980-4954</p></div>
+                <div id="email" class="contact-icon"><span class="material-symbols-outlined">mail</span><p>emaildeexemplo@gmail.com</p></div>
+            </div>
+            <div id="social">
+                <h2>Redes Sociais</h2>
+                <p>Acompanhe de perto as novidades, a minha rotina e os resultados exclusivos que eu crio diariamente! Siga a Ana Carolina nas Redes Sociais para ver portfólios completos e conhecer melhor o meu ambiente de luxo e cuidado.</p>
+                <div class="social-icons" id="contato">
+                    <a href="#" class="social-icon-conteiner" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon-conteiner" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2025. Feito por <a href="https://github.com/softtcode" target="_blank">softtcode</a>.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

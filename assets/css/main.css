@@ -1,0 +1,250 @@
+/*Começo da personalização da apresentação*/
+.presentation-section-text {
+    color: var(--cor-texto-escuro);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.presentation-section-text #presentation-title {
+    font-family: PlayFair Display, serif;
+    font-size: 3rem;
+    letter-spacing: .5px;
+    margin-top: 2.5rem;
+    animation: slider-right 0.8s ease-in-out;
+}
+
+.presentation-section-text #presentation-subtitle {
+    width: 450px;
+    font-family: Cabin, sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    animation: slider-right 0.8s ease-in-out;
+}
+
+.presentation-section-text p {
+    background-color: var(--cor-contraste-escuro-paragrafo);
+    font-size: 1.5rem;
+    font-family: Cabin, sans-serif;
+    line-height: 2.3rem;
+    letter-spacing: .5px;
+    padding: 2rem;
+    animation: slider-right 0.8s ease-in-out;
+}
+
+.margin {
+    margin-left: 2rem;
+}
+
+.presentation-section {
+    width: 100%;
+    background-color: var(--cor-fundo-zebrado);
+    padding: 5rem 5rem 1.5rem 5rem;
+    display: flex;
+}
+
+#e-comercial-estilizado {
+    font-family: Great Vibes, serif;
+    font-weight: normal;
+    margin: 0 5px;
+}
+
+#presentation-photo {
+    width: 20%;
+    background-color: var(--cor-contraste-img);
+    border-radius: 10px 10px 0px 10px;
+}
+/*Fim da personalização da apresentação*/
+
+/*Começo da personalização da tabela de preços*/
+.services-section-text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 3rem;
+    animation: slider-left 0.8s ease-in-out;
+}
+
+.services-section-text h2 {
+    font-family: PlayFair Display, serif;
+    font-size: 3rem;
+    letter-spacing: .5px;
+    color: var(--cor-texto-escuro);
+}
+
+.services-section-text h3 {
+    font-family: Cabin, sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: var(--cor-texto-escuro);
+}
+
+.tabela-services-grid {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.preco-card {
+    background-color: var(--cor-fundo-card);
+    display: flex;
+    gap: 1rem;
+    padding: .5rem;
+    margin: 0 2rem;
+    border-radius: 8px;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.137);
+    transition: all 0.3s ease;
+    animation: img-surge 0.8s ease-in-out;
+}
+
+.preco-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.295);
+}
+
+.service-info {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+}
+
+.preco-card .service-title {
+    font-family: PlayFair Display, serif;
+    font-size: 2rem;
+    letter-spacing: .5px;
+    color: var(--cor-texto-escuro);
+}
+
+.preco-card .preco {
+    font-family: Cabin, sans-serif;
+    font-weight: bold;
+}
+
+.preco-card .preco-descricao {
+    font-family: Cabin, sans-serif;
+    line-height: 1.4rem;
+    margin-top: 1rem;
+}
+
+.service-ilustration {
+    width: 250px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Fim da personalização da tabela de preços*/
+
+/* Começo da personalização do Footer*/
+.contact-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    background-color: #5a4740;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer span {
+    color: var(--cor-fundo-claro);
+}
+
+footer > p a {
+    text-decoration: none;
+    color: #ddb3a2;
+}
+
+footer > p a:hover {
+    text-decoration: underline;
+}
+
+footer > p {
+    color: var(--cor-texto-footer);
+    margin: 2.5rem 0 1rem 0;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    color: var(--cor-fundo-zebrado);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.social-icon-conteiner {
+    padding: .5rem;
+    border-radius: 50%;
+    color: var(--cor-fundo-zebrado);
+    transition: all 0.3s ease;
+}
+
+.social-icon-conteiner:hover {
+    background-color: #d8c1b3;
+    color: #4d3d36;
+}
+
+.social-icons {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#contact {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+#social {
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#social h2 {
+    font-family: PlayFair Display, serif;
+}
+
+#social p {
+    font-family: Cabin, sans-serif;
+    margin-top: .5rem;
+    line-height: 1.4rem;
+}
+
+#services {
+    background-color: var(--cor-fundo-claro);
+}
+
+#btn-services-link {
+    margin-top: 1rem;
+}
+
+#email {
+    letter-spacing: .5px;
+}
+/*Fim da personalização do Footer*/
+
+@keyframes img-surge {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}

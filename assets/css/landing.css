@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
@@ -6,11 +7,20 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --cor-fundo-claro: #fff6eb;
+    --cor-fundo-zebrado: #ece4da;
     --cor-contraste-escuro: #4d3d36;
+    --cor-contraste-escuro-paragrafo: #d8d0c6;
     --cor-texto-escuro: #333333;
     --cor-linha-sutil: #ebebeb;
+    --cor-fundo-card: white;
+    --cor-texto-footer: #a88677;
+    --cor-contraste-img: #c4bcb3;
 }
 
 .landing-grid {
@@ -34,7 +44,7 @@
 
 .landing-left-side header h1 {
     font-family: Great Vibes, sans-serif;
-    font-size: 44px;
+    font-size: 3rem;
     font-weight: normal;
     color: var(--cor-texto-escuro);
     animation: slider-left 0.8s ease-in-out;
@@ -69,7 +79,6 @@
     background-size: cover;
     background-position: center center;
     box-shadow: inset 2px 0px 10px rgba(0, 0, 0, 0.5);
-    
 }
 
 .landing-main-section {
@@ -122,8 +131,8 @@
     animation: fade 2s ease-in-out;
 }
 
-#wpp-link {
-    width: 35%;
+.btn-link {
+    width: 16rem;
     font-family: Cabin, sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
@@ -133,15 +142,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: .3rem;
     border-radius: 8px;
-    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.404);
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.274);
     transition: all 0.3s ease-in-out;
     animation: slider-left 0.8s ease-in-out;
     position: relative;
     z-index: 1;
 }
 
-#wpp-link:hover {
+.btn-link:hover {
     transform: translateY(-6px);
     box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.404);
 }
@@ -179,3 +189,4 @@
         opacity: 1;
     }
 }
+/* Fim da landing */

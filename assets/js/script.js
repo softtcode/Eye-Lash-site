@@ -1,0 +1,1 @@
+const mudaFundo = document.getElementsByClassName('landing-right-side')
